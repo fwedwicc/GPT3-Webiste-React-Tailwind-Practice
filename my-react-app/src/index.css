@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-dark-red;
+  @apply text-pink;
+  overflow-x: hidden;
+  margin: 0;
+}
+li, button {
+  @apply text-pink;
+  font-size: 14px;
+}
+#nav {
+  position: relative;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(78, 0, 0, 0.02);
+  backdrop-filter: blur(40px);
+  border-radius: 0px 0px 8px 8px;
+  padding: 0.8rem 9rem 0.8rem 9rem;
+  margin-top: 2rem;
+}
+#sign-up-btn {
+  padding: 10px 24px 10px 24px;
+  border-radius: 6px;
+}
+#get-started-btn {
+  border-radius: 0 6px 6px 0;
+}
+#header {
+  position: relative;
+  z-index: 2;
+  margin-top: 2rem;
+}
+#heading {
+  background: linear-gradient(87deg, #B94C4C 10.62%, #C78B15 108.47%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#header-illustration {
+  width: 39rem;
+  height: auto;
+  padding-left: 7rem;
+  z-index: 2;
+}
+#grid {
+  position: absolute;
+  width: 35rem;
+  height: auto;
+  left: 40rem;
+  top: -2.5rem;
+  z-index: 1;
+}
+#email-input {
+  border: solid 1px #750C0C;
+  border-radius: 6px 0 0 6px;
+}
+#email-input::placeholder {
+  color: #AD4B4B;
+}
+#profile-2,
+#profile-3,
+#profile-4,
+#profile-more {
+  margin-left: -10.5px;
+  position: relative;
+}
+#home {
+  padding: 2.6rem 9rem 0 9rem;
+  height: 100vh;
+  margin-top: -3.3rem;
+}
+@layer components {
+  .blur1 {
+    width: 1013px;
+    height: 1013px;
+    border-radius: 1013px;
+    background-color: #620808;
+    filter: blur(282px);
+    position: absolute;
+    top: -28rem;  
+    left: -17rem;
+    z-index: 1;
+  }
+  .blur2 {
+    border-radius: 701px;
+    background: #940e0e;
+    filter: blur(282px);
+    width: 701px;
+    height: 496px;
+    position: absolute;
+    top: 35rem;  
+    left: 65rem;
+    z-index: 1;
+  }  
+  .btn {
+    padding: 10px 24px 10px 24px;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-red;
+    border-radius: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-red;
+  }
+}
